@@ -1,0 +1,609 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+}
+body{
+	max-width: 1920px;
+}
+
+
+
+.header{
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	background-color: #000000;
+}
+
+.menu_bar{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+	z-index: 1;
+	margin-top: 3%;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.main_logo_and_text{
+	display: flex;
+	width: 40%;
+	align-items: center;
+}
+.main_logo_and_text p{
+	z-index: 1;
+	font-weight: 700;
+	text-align: center;
+	font-style: normal;
+	font-family: "Atkinson Hyperlegible", "Atkinson Hyperlegible Placeholder", sans-serif;
+	color: #fcf7f7;
+	font-size: calc(15px + 10 * ((100vw - 390px) / (1280 - 390)));
+	line-height: 0.8;
+	position: absolute;
+	margin-left: 7%;
+}
+
+
+.phone_and_imgs{
+	display: block;
+	width: 20%;
+}
+
+.imgs_bar{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 99%;
+}
+
+.imgs_bar a{
+	width: calc(25px + 16 * ((100vw - 390px) / (1280 - 390)));
+}
+
+.main_logo nav{
+	width: calc(39px + 20 * ((100vw - 390px) / (1280 - 390)));
+}
+
+.phone_number{
+	width: auto;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	z-index: 1;
+	font-weight: 700;
+	font-style: normal;
+	font-family: "Atkinson Hyperlegible", "Atkinson Hyperlegible Placeholder", sans-serif;
+	color: #d15e00;
+	font-size: calc(15px + 10 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: 0em;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.main_text_content{
+	width: auto;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	background-color: #000000;
+	z-index: 1;
+	font-weight: 800;
+	font-style: normal;
+	font-family: "Wix Madefor Display", sans-serif;
+	color: #d15e00;
+	line-height: 1.2;
+	font-size: calc(43px + 47 * ((100vw - 390px) / (1280 - 390)));
+	text-align: left;
+	padding: 11% 0 3% 5%;
+}
+
+.two-block{
+	width: 100%;
+	height: 700px;
+	position: relative;
+	overflow:hidden;
+}
+.two-block-background{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0.15;
+	z-index: 1;
+	background-image: url(/static/data/ford-focus.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.two-block-text{
+	display: block;
+	position: absolute;
+	top: 50%;
+   left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.two-block-text h2{
+	max-width: 100%;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	font-weight: 700;
+	font-style: normal;
+	font-family: "Inter", "Inter Placeholder", sans-serif;
+	color: #1a0000;
+	font-size: calc(35px + 14 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: -2.6px;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.two-block-text p{
+	width: 390px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	max-width: 100%;
+	overflow: visible;
+	font-weight: 600;
+	font-style: normal;
+	font-family: "Inter", sans-serif;
+	color: #000000;
+	font-size: calc(20px + 3 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: -0.5px;
+	line-height: 1.5;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+}
+
+/*! Kak provodit vikup!*/
+
+.vikup{
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #000000;
+	overflow:hidden;
+}
+
+.vikup h2{
+	width: 100%;
+	padding: 2% 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	z-index: 1;
+	font-weight: 800;
+	font-style: normal;
+	font-family: "Wix Madefor Display", sans-serif;
+	color: #d15e00;
+	font-size: calc(30px + 15 * ((100vw - 390px) / (1280 - 390)));
+	line-height: 1.2;
+	text-align: center;
+}
+
+.grid-setka{
+	box-sizing: border-box;
+	height: min-content;
+	display: grid;
+	width: 80%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 15px;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	padding: 2% 3%;
+}
+
+.grid-elem-vikup{
+	margin: 3%;
+}
+
+
+.img-elem img{
+	width: calc(300px + 200 * ((100vw - 390px) / (1280 - 390)));
+	height: calc(160px + 140 * ((100vw - 390px) / (1280 - 390)));
+	border-radius: 20px;
+	transition: box-shadow 0.3s ease;
+}
+
+.img-elem img:hover{
+   box-shadow: 0 0 20px #d15e00;
+}
+
+.text-grid-elem-vikup-name{
+	width: 100%;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	font-weight: 700;
+	font-style: normal;
+	font-family: "Inter", "Inter Placeholder", sans-serif;
+	color: #d15e00;
+	font-size: calc(17px + 7 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: -0.8px;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.text-grid-elem-vikup-main{
+	width: 80%;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	font-weight: 500;
+	font-style: normal;
+	font-family: "Inter", sans-serif;
+	color: #d15e00;
+	font-size: calc(13px + 7 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: -0.5px;
+	line-height: 1.4;
+	text-align: left;
+}
+
+/*! Documents !*/
+
+.documents{
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+}
+
+.documents-background{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 95%;
+	overflow: hidden;
+	opacity: 0.15;
+	z-index: -1;
+	background-image: url(/static/data/porsh.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 100px;
+
+}
+
+.documents-wrap{
+	padding: 10% 0 10% 0;
+}
+
+.documents h2{
+	width: 100%;
+	padding: 2% 0;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	z-index: 1;
+	font-weight: 800;
+	font-style: normal;
+	font-family: "Wix Madefor Display", sans-serif;
+	color: #000000;
+	font-size: calc(30px + 15 * ((100vw - 390px) / (1280 - 390)));
+	line-height: 1.2;
+	text-align: center;
+}
+
+.documents-flex{
+	box-sizing: border-box;
+	width: 90%;
+	height: min-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	overflow: visible;
+	align-content: center;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.card{
+	box-sizing: border-box;
+	width: calc(230px + 90 * ((100vw - 390px) / (1280 - 390)));
+	height: calc(130px + 50 * ((100vw - 390px) / (1280 - 390)));
+	box-shadow: 0px 0.7961918735236395px 2.3885756205709185px 0px rgba(0, 0, 0, 0), 0px 2.414506143104518px 7.2435184293135535px 0px rgba(0, 0, 0, 0.01207), 0px 6.382653521484461px 19.147960564453385px 0px rgba(0, 0, 0, 0.03191), 0px 20px 60px 0px rgba(0, 0, 0, 0.1);
+	background: rgba(160, 160, 160, 0.2);
+	margin: 2%;
+	align-content: center;
+	border-radius: 20px;
+	border: 1px solid #222;
+	transition: box-shadow 0.3s ease;
+}
+
+.card:hover{
+   box-shadow: 0 0 20px #d15e00;
+}
+
+
+.card p{
+	width: 80%;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	overflow: visible;
+	font-weight: 900;
+	font-style: normal;
+	font-family: "Inter", sans-serif;
+	color: #000000;
+	font-size: calc(17px + 6 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: -0.4px;
+	line-height: 1.4;
+	text-align: center;
+	margin: auto;
+	margin-top: 10%;
+}
+
+/*! Form !*/
+
+.form{
+	width: 100%;
+	background-color: #000000;
+	box-sizing: border-box;
+}
+
+.form-main{
+	padding: 5% 0 5% 0;
+}
+
+.form h2{
+	width: 100%;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	overflow: visible;
+	font-weight: 800;
+	font-style: normal;
+	font-family: "Wix Madefor Display", sans-serif;
+	color: #d15e00;
+	font-size: calc(30px + 15 * ((100vw - 390px) / (1280 - 390)));
+	line-height: 1.2;
+	text-align: center;
+}
+
+.form p{
+	width: 480px;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	max-width: 100%;
+	overflow: visible;
+	font-weight: 700;
+	font-style: italic;
+	font-family: "Atkinson Hyperlegible", "Atkinson Hyperlegible Placeholder", sans-serif;
+	color: #d15e00;
+	font-size: calc(12px + 4 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: 0em;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3% 0 3% 0;
+	margin: 0 auto;
+}
+
+.form form{
+	box-sizing: border-box;
+	display: flex;
+	width: 1000px;
+	max-width: 100%;
+	flex-wrap: wrap;
+	margin: auto;
+}
+
+.form input[type = "text"]{
+	width: 48%;
+	max-width: 100%;
+	padding: 15px;
+	margin: auto;
+	border-radius: 7px;
+}
+
+.form textarea{
+	width: 980px;
+	max-width: 100%;
+	padding: 50px;
+	margin: 2% auto;
+	border-radius: 7px;
+	rows: 20;
+	resize: none;
+}
+.form input, textarea{
+	font-weight: 500;
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+}
+
+.form input[type = "submit"]{
+	width: 980px;
+	max-width: 100%;
+	padding: 15px;
+	margin: auto;
+	border-radius: 7px;
+	background-color: #d15e00;	
+	font-size: 15px;
+	font-weight: 600;
+	color: #FFFFFF;
+	transition: box-shadow 0.3s ease;
+}
+
+.form input[type="submit"]:hover{
+	box-shadow: 0 0 20px #d15e00;
+}
+
+
+/*! FAQ !*/
+
+.FAQ{
+	width: 100%;
+	box-sizing: border-box;
+}
+.FAQ h2{
+	width: 80%;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	overflow: visible;
+	font-weight: 800;
+	font-style: normal;
+	font-family: "Wix Madefor Display", sans-serif;
+	color: #000000;
+	font-size: calc(30px + 15 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: 0em;
+	line-height: 1.2;
+	text-align: left;
+	margin: 5% 9%;
+}
+
+.questions{
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 7% auto;
+	box-sizing: border-box;
+}
+
+.QA{
+	width: 200px;
+	max-width: 100%;
+	margin: 15px 5%;
+}
+
+.QA p:first-child{
+	width: 100%;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	overflow: visible;
+	font-weight: 400;
+	font-style: normal;
+	font-family: "Atkinson Hyperlegible", "Atkinson Hyperlegible Placeholder", sans-serif;
+	color: #000000;
+	font-size: calc(16px + 4 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: -0.025em;
+	line-height: 1.1;
+	text-align: left;
+	padding: 5% 0;
+}
+
+.QA p:last-child{
+	width: 100%;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	max-width: 400px;
+	overflow: visible;
+	font-weight: 400;
+	font-style: normal;
+	font-family: "Atkinson Hyperlegible", "Atkinson Hyperlegible Placeholder", sans-serif;
+	color: #000000;
+	font-size: calc(12px + 4 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: 0em;
+	line-height: 1.1;
+	text-align: left;
+}
+
+/*! Footer !*/
+
+.footer{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.line{
+	width: 80%;
+	margin: auto;
+	border-top: 2px solid #333;
+	opacity: 0.25;
+	margin-bottom: 3%;
+}
+
+.footer-text{
+	width: 30%;
+	text-align: center;
+	margin: 5% auto;
+}
+
+.footer-text p{
+	width: 100%;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	word-break: break-word;
+	overflow: hidden;
+	opacity: 0.5;
+	font-weight: 400;
+	font-style: normal;
+	font-family: "Atkinson Hyperlegible", "Atkinson Hyperlegible Placeholder", sans-serif;
+	color: #000000;
+	font-size: calc(10px + 4 * ((100vw - 390px) / (1280 - 390)));
+	letter-spacing: 0em;
+	line-height: 1.2;
+	text-align: center;
+}
+
+
+
+
+@media (max-width: 540px){
+	.menu_bar{
+		flex-direction: column;
+		align-content: space-between;
+	}
+	.main_logo_and_text{
+		width: 90%;
+	}
+	.main_logo_and_text p{
+		margin-left: 17%;
+	}
+	.phone_and_imgs{
+		width: 40%;
+	}
+	.grid-setka{
+		grid-template-columns: auto;
+		grid-template-rows: 1fr;
+	}
+
+	.form input[type = "text"]{
+		width: 100%;
+		margin: 2%;
+	}
+
+	.form textarea{
+		width: 100%;
+		margin: 2%;
+	}
+
+	.form input[type = "submit"]{
+		margin: 2%;
+	}
+
+	.QA{
+		margin: auto;
+	}
+
+	.FAQ h2{
+		text-align: center;
+	}
+}
+
